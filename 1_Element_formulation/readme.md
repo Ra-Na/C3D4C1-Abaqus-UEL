@@ -8,4 +8,5 @@
 ![Element formulation sketch](./element_formulation.gif "Element formulation sketch")
 
 - It is important that only adjacent nodes are involved when interpolating the pDOF (red arrows). This ensures common pDOF-values at adjacent elements
-- we have then 14*4=56 = binomial(8 over 5) 
+- we have then 14*4=56 = binomial(5+3 over 5), which means we can adopt a complete  5<sup>th</sup>-order polynomial
+- 
