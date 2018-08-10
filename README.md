@@ -5,6 +5,7 @@ This repository contains all the necessary tools to use a tetrahedral incompatib
 1. Fully compatible with C3D4-meshes
 2. Large strain formulation
 3. Simple user material interface
+4. Allows for numeric determination of element stiffness by finite differences (no more DDSDDE)
 5. 4 degrees of freedom (DOF, field value and gradient) at each corner node, i.e.~16 total DOF
 6. Full 5<sup>th</sup> order polynomial shape function
 7. Numerical integration exact up to a full 6<sup>th</sup> order polynomial
