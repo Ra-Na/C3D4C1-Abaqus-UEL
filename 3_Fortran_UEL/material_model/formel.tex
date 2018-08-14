@@ -1,0 +1,387 @@
+\newcommand{\sm}[1]{\mbox{\scriptsize $#1$}}
+\newcommand{\I}{I}
+\newcommand{\II}{I\!\!I}
+\newcommand{\III}{I\!\!I\!\!I}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% SCHRIFTGROESSE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\Ds}{\displaystyle}
+\newcommand{\Ts}{\textstyle}
+\newcommand{\Ss}{\scriptstyle}%
+\newcommand{\absatz}{\\ \hspace*{5mm}}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OPERATOREN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\renewcommand{\d}{{\,\rm  d}}
+\newcommand{\D}{{\,\rm  D}}
+\newcommand{\dt}{\triangle t}
+\newcommand{\T}[1]{{#1}^{\sf  T}}
+%~ \newcommand{\I}[1]{{#1}^{\rm -1}}
+%\newcommand{ \I}[1]{{#1}^{{\mbox{\rule[0.7mm]{0.9mm}{0.2mm}}\sf 1}}}
+\newcommand{\IT}[1]{{#1}^{\sf  -T}}
+%\newcommand{\IT}[1]{{#1}^{{\mbox{\rule[0.7mm]{0.9mm}{0.2mm}}\sf T}}}
+\newcommand{\pd}[2]{\displaystyle\frac{\partial #1}{\partial #2}}
+\newcommand{\td}[2]{\frac{{\rm d} #1}{{\rm d} #2}}
+\newcommand{\z}[1]{{\tilde{#1}}}
+\newcommand{\abs}[1]{\left| \, #1 \, \right|}
+\newcommand{\norm}[1]{\Vert #1 \Vert}
+\newcommand{\normg}[1]{\left\Vert \, #1 \, \right\Vert}
+\newcommand{\sign}[1]{{\rm sgn}\left( #1 \right)}
+%~ \newcommand{\grad}[1]{{\rm grad}\left( #1 \right)}
+\renewcommand{\div}[1]{{\rm div }\left( #1 \right)}
+%\newcommand{\rot}[1]{{\rm rot }\left( #1 \right)}
+\newcommand{\rot}[1]{{\rm curl }\left( #1 \right)}
+%~ \newcommand{\Grad}[1]{{\rm Grad}\left( #1 \right)}
+\newcommand{\Div}[1]{{\rm Div }\left( #1 \right)}
+\newcommand{\Rot}[1]{{\rm Curl }\left( #1 \right)}
+%\newcommand{\Rot}[1]{{\rm Rot }\left( #1 \right)}
+\newcommand{\tr}[1]{{\rm tr  }( #1 )}
+\newcommand{\spur}[1]{{\rm sp  }( #1 )}
+\newcommand{\cof}[1]{{\rm cof  }( #1 )}
+\renewcommand{\det}[1]{{\rm det }( #1 )}
+\newcommand{\dev}[1]{{\rm dev}\left( #1 \right)}
+\newcommand{\fsym}[1]{{\rm sym }( #1 )}
+\newcommand{\fskw}[1]{{\rm skw }( #1 )}
+\newcommand{\unit}[1]{\rm #1}
+\newcommand{\lb}{\left(}
+\newcommand{\rb}{\right)}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\ls}{\{}
+\newcommand{\rs}{\}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Farben
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newcommand{\cred}{}
+%\newcommand{\cblue}{}
+%\newcommand{\cgreen}{}
+\newcommand{\cred }{\textcolor{red}}
+\newcommand{\white }{\textcolor{white}}
+\newcommand{\cblue }{\textcolor{blue}}
+\newcommand{\cgreen }{\textcolor{green}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auslassung
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\fempty}[1]{{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sprache
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\deu}[1]{}
+\newcommand{\eng}[1]{#1}
+%\newcommand{\deu}[1]{#1}
+%\newcommand{\eng}[1]{}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%MARKER
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ma}{{$\bigstar$ }}
+\newcommand{\mb}{{$\blacksquare$ }}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ABSCHNITT-STYLES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\f}[1]{\mbox{$ #1 $}}
+\newcommand{\eqbox}[1]{\begin{equation}\mbox{\fboxsep=.2in \framebox{$ #1 $}}\end{equation}}
+\newcommand{\eqnbox}[2]{\begin{equation}\mbox{\fboxsep=#1 \framebox{$ #2 $}}\end{equation}}
+\newcommand{\topic}[1]{\vspace*{2mm}{\bf  #1.}}
+%\newcommand{\remark}[2]{\vspace*{4mm}\begin{spacing}{0.95}
+%                                     \small \noindent {\bf #1.} #2
+%                                     \end{spacing}
+%                        \vspace{4mm}}
+
+%
+%\newcommand{\excercisec}[3]
+%{\addtocounter{example}{1}\rule{170mm}{0.01mm}\newline
+%{\bf Beispiel \arabic{chapter}.\arabic{example}: }{\it #1.} \newline
+%{\bf Frage: } #2 \newline
+%{\bf Antwort: } #3 \newline
+%\rule[12pt]{170mm}{0.01mm}}
+%
+%\newcommand{\example}[4]
+%{
+% \begin{exampleenv}[#2]\label{#1}
+% {\bf Frage: } #3 \newline
+% {\bf Antwort: } #4\newline
+% \end{exampleenv}
+%}
+%
+%\newenvironment{excercise}[2]
+%{\addtocounter{example}{1}
+% \rule{170mm}{0.01mm}\newline
+% {\bf Beispiel \arabic{chapter}.\arabic{example}: }{\it #1.}\newline
+% {\bf Frage: } #2 \newline
+% {\bf Antwort: }
+%}
+%{\newline\rule[12pt]{170mm}{0.01mm}
+%}
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INDIZES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\ta}{{}^n}
+\newcommand{\tb}{{}^{n+1}}
+\newcommand{\tba}{{}^{n+1}_i}
+\newcommand{\tbb}{{}^{n+1}_{i+1}}
+\renewcommand{\r}[2]{{#2_{\langle #1 \rangle}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MENGEN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\vect} {{\it Vect}}
+\newcommand{\ortp} {{\it Orth}^{\small +}}
+\newcommand{\ort} {{\it Orth}}
+\newcommand{\sym} {{\it Sym}}
+\newcommand{\skw} {{\it Skw}}
+\newcommand{\psym}{{\it Psym}}
+\newcommand{\unim}{{\it Unim}}
+\newcommand{\invp}{{\it Inv}^{\small +}}
+\newcommand{\inv}{{\it Inv}}
+\newcommand{\reell}{{\it R}}
+\newcommand{\reellp}{{\it R}^+}
+\newcommand{\lin} {{\it Lin}}
+\newcommand{\irr} {{\it Sym'}}
+\newcommand{\sop} {{{\it SO}(3)}}
+\newcommand{\shear} {{{\it Shear}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ROEMISCHE ZAHLEN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\rI}{{\mathit{I}}}
+\newcommand{\rII}{{\mathit{I\hspace{-1mm}I}}}
+\newcommand{\rIII}{{\mathit{I\hspace{-1mm}I\hspace{-1mm}I}}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ROEMISCHE ZAHLEN einkreisen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\kreis}[1]{\unitlength1ex\begin{picture}(2.5,2.5)\put(1.25,0.75){\circle{3.2}}\put(1.25,0.75){\makebox(0,0){#1}}\end{picture}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FETTE BUCHSTABEN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\sty}[1]{{\mathbf{#1}}} 
+%{\mbox{\boldmath $#1$}}
+%\newcommand{\styy}[1]{\mbox{\boldmath $\sf #1$}}
+\newcommand{\styy}[1]{{\mathbb{#1}}}
+\newcommand{\fa}{\sty{ a}}
+%IDENTITÄT
+%\newcommand{\feins}{\sty{ 1}}
+%\newcommand{\ffeins}{\mathbbm{ 1}}
+%NULL
+\newcommand{\fnull}{\sty{ o}}
+\newcommand{\fNull}{\sty{ O}}
+\newcommand{\ffnull}{\styy { O}}
+
+\newcommand{\fb}{\sty{ b}}
+\newcommand{\fc}{\sty{ c}}
+\newcommand{\fd}{\sty{ d}}
+\newcommand{\fe}{\sty{ e}}
+\newcommand{\ff}{\sty{ f}}
+\newcommand{\fg}{\sty{ g}}
+\newcommand{\fh}{\sty{ h}}
+%\newcommand{\f1}{\sty{ 1}}
+\newcommand{\fj}{\sty{ j}}
+\newcommand{\fk}{\sty{ k}}
+\newcommand{\fl}{\sty{ l}}
+\newcommand{\fm}{\sty{ m}}
+\newcommand{\fn}{\sty{ n}}
+\newcommand{\fo}{\sty{ o}}
+\newcommand{\fp}{\sty{ p}}
+\newcommand{\fq}{\sty{ q}}
+\newcommand{\fr}{\sty{ r}}
+\newcommand{\fs}{\sty{ s}}
+\newcommand{\ft}{\sty{ t}}
+\newcommand{\fu}{\sty{ u}}
+\newcommand{\fv}{\sty{ v}}
+\newcommand{\fw}{\sty{ w}}
+\newcommand{\fx}{\sty{ x}}
+\newcommand{\fy}{\sty{ y}}
+\newcommand{\fz}{\sty{ z}}
+%
+\newcommand{\cfu}{\check{\fu}}
+\newcommand{\cfv}{\check{\fv}}
+\newcommand{\cfp}{\check{\fp}}
+\newcommand{\cfD}{\check{\fD}}
+\newcommand{\cfeps}{\check{\feps}}
+\newcommand{\cftau}{\check{\ftau}}
+\newcommand{\cfsigma}{\check{\fsigma}}
+%
+\newcommand{\hfu}{\hat{\fu}}
+\newcommand{\hfeps}{\hat{\feps}}
+\newcommand{\hfsigma}{\hat{\fsigma}}
+%
+\newcommand{\ffa}{\styy{ a}}
+\newcommand{\ffb}{\styy{ b}}
+\newcommand{\ffc}{\styy{ c}}
+\newcommand{\ffd}{\styy{ d}}
+\newcommand{\ffe}{\styy{ e}}
+\newcommand{\fff}{\styy{ f}}
+\newcommand{\ffg}{\styy{ g}}
+\newcommand{\ffh}{\styy{ h}}
+\newcommand{\ffi}{\styy{ i}}
+\newcommand{\ffj}{\styy{ j}}
+\newcommand{\ffk}{\styy{ k}}
+\newcommand{\ffl}{\styy{ l}}
+\newcommand{\ffm}{\styy{ m}}
+\newcommand{\ffn}{\styy{ n}}
+\newcommand{\ffo}{\styy{ o}}
+\newcommand{\ffp}{\styy{ p}}
+\newcommand{\ffq}{\styy{ q}}
+\newcommand{\ffr}{\styy{ r}}
+\newcommand{\ffs}{\styy{ s}}
+\newcommand{\fft}{\styy{ t}}
+\newcommand{\ffu}{\styy{ u}}
+\newcommand{\ffv}{\styy{ v}}
+\newcommand{\ffw}{\styy{ w}}
+\newcommand{\ffx}{\styy{ x}}
+\newcommand{\ffy}{\styy{ y}}
+\newcommand{\ffz}{\styy{ z}}
+%
+\newcommand{\fA}{\sty{ A}}
+\newcommand{\fB}{\sty{ B}}
+\newcommand{\fC}{\sty{ C}}
+\newcommand{\fD}{\sty{ D}}
+\newcommand{\fE}{\sty{ E}}
+\newcommand{\fF}{\sty{ F}}
+\newcommand{\zfF}{\tilde{\sty{ F}}}
+\newcommand{\fG}{\sty{ G}}
+\newcommand{\fH}{\sty{ H}}
+\newcommand{\fki}{\sty{ i}}
+\newcommand{\fI}{\sty{ I}}
+\newcommand{\fati}{\sty{ i}}
+\newcommand{\fJ}{\sty{ J}}
+\newcommand{\fK}{\sty{ K}}
+\newcommand{\fL}{\sty{ L}}
+\newcommand{\fM}{\sty{ M}}
+\newcommand{\fN}{\sty{ N}}
+\newcommand{\fO}{\sty{ 0}}
+\newcommand{\fP}{\sty{ P}}
+\newcommand{\fQ}{\sty{ Q}}
+\newcommand{\fR}{\sty{ R}}
+\newcommand{\fS}{\sty{ S}}
+\newcommand{\fT}{\sty{ T}}
+\newcommand{\fU}{\sty{ U}}
+\newcommand{\fV}{\sty{ V}}
+\newcommand{\fW}{\sty{ W}}
+\newcommand{\fX}{\sty{ X}}
+\newcommand{\fY}{\sty{ Y}}
+\newcommand{\fZ}{\sty{ Z}}
+%
+\newcommand{\bfA}{\bar{\sty{ A}}}
+\newcommand{\bfB}{\bar{\sty{ B}}}
+\newcommand{\bfC}{\bar{\sty{ C}}}
+\newcommand{\bfD}{\bar{\sty{ D}}}
+\newcommand{\bfE}{\bar{\sty{ E}}}
+\newcommand{\bfF}{\bar{\sty{ F}}}
+\newcommand{\bfG}{\bar{\sty{ G}}}
+\newcommand{\bfH}{\bar{\sty{ H}}}
+\newcommand{\bfI}{\bar{\sty{ I}}}
+\newcommand{\bfJ}{\bar{\sty{ J}}}
+\newcommand{\bfK}{\bar{\sty{ K}}}
+\newcommand{\bfL}{\bar{\sty{ L}}}
+\newcommand{\bfM}{\bar{\sty{ M}}}
+\newcommand{\bfN}{\bar{\sty{ N}}}
+\newcommand{\bfO}{\bar{\sty{ 0}}}
+\newcommand{\bfP}{\bar{\sty{ P}}}
+\newcommand{\bfQ}{\bar{\sty{ Q}}}
+\newcommand{\bfR}{\bar{\sty{ R}}}
+\newcommand{\bfS}{\bar{\sty{ S}}}
+\newcommand{\bfT}{\bar{\sty{ T}}}
+\newcommand{\bfU}{\bar{\sty{ U}}}
+\newcommand{\bfV}{\bar{\sty{ V}}}
+\newcommand{\bfW}{\bar{\sty{ W}}}
+\newcommand{\bfX}{\bar{\sty{ X}}}
+\newcommand{\bfY}{\bar{\sty{ Y}}}
+\newcommand{\bfZ}{\bar{\sty{ Z}}}
+\newcommand{\bfeps}{\bar{\feps}}
+\newcommand{\bfsigma}{\bar{\fsigma}}
+\newcommand{\bftau}{\bar{\ftau}}
+%
+\newcommand{\ffA}{\styy{ A}}
+\newcommand{\ffB}{\styy{ B}}
+\newcommand{\ffC}{\styy{ C}}
+\newcommand{\ffD}{\styy{ D}}
+\newcommand{\ffE}{\styy{ E}}
+\newcommand{\ffF}{\styy{ F}}
+\newcommand{\ffG}{\styy{ G}}
+\newcommand{\ffH}{\styy{ H}}
+\newcommand{\ffI}{\styy{ I}}
+\newcommand{\ffJ}{\styy{ J}}
+\newcommand{\ffK}{\styy{ K}}
+\newcommand{\ffL}{\styy{ L}}
+\newcommand{\ffM}{\styy{ M}}
+\newcommand{\ffN}{\styy{ N}}
+\newcommand{\ffO}{\styy{ O}}
+\newcommand{\ffP}{\styy{ P}}
+\newcommand{\ffQ}{\styy{ Q}}
+\newcommand{\ffR}{\styy{ R}}
+\newcommand{\ffS}{\styy{ S}}
+\newcommand{\ffT}{\styy{ T}}
+\newcommand{\ffU}{\styy{ U}}
+\newcommand{\ffV}{\styy{ V}}
+\newcommand{\ffW}{\styy{ W}}
+\newcommand{\ffX}{\styy{ X}}
+\newcommand{\ffY}{\styy{ Y}}
+\newcommand{\ffZ}{\styy{ Z}}
+
+\newcommand{\PPP}{\overset{\la 8 \ra}{\styy{ P}}}
+%
+\newcommand{\fchi}{\mbox{\boldmath $\chi$}}
+\newcommand{\feta}{\mbox{\boldmath $\eta$}}
+\newcommand{\ftau}{\mbox{\boldmath $\tau$}}
+\newcommand{\fsigma}{\mbox{\boldmath $\sigma$}}
+\newcommand{\fDelta}{\mbox{\boldmath $\Delta$}}
+\newcommand{\fomega}{\mbox{\boldmath $\omega$}}
+\newcommand{\fOmega}{\mbox{\boldmath $\Omega$}}
+\newcommand{\fLambda}{\mbox{\boldmath $\Lambda$}}
+\newcommand{\fxi}{\mbox{\boldmath $\xi $}}
+\newcommand{\fXi}{\mbox{\boldmath $\Xi $}}
+\newcommand{\feps}{\mbox{\boldmath $\varepsilon $}}
+\newcommand{\flambda}{\mbox{\boldmath $\lambda$}}
+\newcommand{\fgamma}{\mbox{\boldmath $\gamma $}}
+\newcommand{\fGamma}{\mbox{\boldmath $\Gamma $}}
+\newcommand{\fSigma}{\mbox{\boldmath $\Sigma $}}
+\newcommand{\fPi}{\mbox{\boldmath $\Pi $}}
+\newcommand{\fPhi}{\mbox{\boldmath $\Phi $}}
+\newcommand{\fphi}{\mbox{\boldmath $\phi $}}
+\newcommand{\fPsi}{\mbox{\boldmath $\Psi $}}
+\newcommand{\fJota}{{\bf I}}
+\newcommand{\fepsi}{\mbox{\boldmath $\varepsilon $}}
+%
+\newcommand{\cA}{{\cal A}}
+\newcommand{\cB}{{\cal B}}
+\newcommand{\cC}{{\cal C}}
+\newcommand{\cD}{{\cal D}}
+\newcommand{\cE}{{\cal E}}
+\newcommand{\cF}{{\cal F}}
+\newcommand{\cG}{{\cal G}}
+\newcommand{\cH}{{\cal H}}
+\newcommand{\cI}{{\cal I}}
+\newcommand{\cJ}{{\cal J}}
+\newcommand{\cK}{{\cal K}}
+\newcommand{\cL}{{\cal L}}
+\newcommand{\cM}{{\cal M}}
+\newcommand{\cN}{{\cal N}}
+\newcommand{\cO}{{\cal O}}
+\newcommand{\cP}{{\cal P}}
+\newcommand{\cQ}{{\cal Q}}
+\newcommand{\cR}{{\cal R}}
+\newcommand{\cS}{{\cal S}}
+\newcommand{\cT}{{\cal T}}
+\newcommand{\cU}{{\cal U}}
+\newcommand{\cV}{{\cal V}}
+\newcommand{\cW}{{\cal W}}
+\newcommand{\cX}{{\cal X}}
+\newcommand{\cY}{{\cal Y}}
+\newcommand{\cZ}{{\cal Z}}
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "~/work/latex/p_tm_03/formel"
+%%% End: 
+
+\newcommand{\boxedeqn}[1]{%
+  \[\fbox{%
+      \addtolength{\linewidth}{-2\fboxsep}%
+      \addtolength{\linewidth}{-2\fboxrule}%
+      \begin{minipage}{\linewidth}%
+      \begin{align}#1\end{align}%
+      \end{minipage}%
+    }\]%
+}
+%%% differenziations-D:
+\newcommand{\rd}{{\text{d}}}
+\newcommand{\rD}{{\text{D}}}

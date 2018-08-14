@@ -898,7 +898,7 @@
       matrix2(56,15)=0
       matrix2(56,16)=0.5
 
-! the q-matrix maps from the 56 pseudo-dof to the 56 polynomial coeffs. 
+! the q-matrix maps from the 56 polynomial coeffs. to the 56 pseudo-dof
       double precision q(56,56)
       q(1,1)=1
       q(1,2)=z1

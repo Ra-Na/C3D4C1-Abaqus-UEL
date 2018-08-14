@@ -1,0 +1,110 @@
+
+
+
+\documentclass[a4paper]{article}
+%\usepackage{a4}
+%\usepackage{german}
+%\usepackage{ngerman}
+%\usepackage{bibgerm}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{graphics}
+\usepackage{psfrag}
+\usepackage{hyperref}
+%\usepackage{multimedia}
+%\usepackage{rotating}
+%\usepackage{mathbbol}
+%\usepackage{dsfont}
+\usepackage{amssymb,amsmath}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{exscale}
+\usepackage[round,authoryear]{natbib}
+\usepackage{color}
+%
+% Seitenränder
+% \setlength{\unitlength}{1cm} % Laengeneinheit
+\setlength{\headsep}{0.5cm} \setlength{\topskip}{0.5cm}
+\setlength{\intextsep}{0.1cm} \setlength{\textfloatsep}{0.1cm}
+\setlength{\textheight}{24.7cm} \setlength{\topmargin}{-1cm}
+\setlength{\textwidth}{17cm} \setlength{\oddsidemargin}{-0.5cm}
+\setlength{\evensidemargin}{-0.5cm}
+\setlength{\marginparwidth}{50pt} \setlength{\footskip}{1cm}
+%
+%
+% Zeilenabstand
+\renewcommand{\baselinestretch}{1.2}\small\normalsize
+\input{formel.tex}
+\include{fonts}
+%
+\usepackage{authblk}
+\begin{document}
+
+\section{Ciarlet's elastic energy}
+The Ciarlet-Geymonat strain energy is close to the St.-Venant-Kirchhoff strain energy, but in contrast to the latter it is polyconvex in $\fF$, 
+\begin{align}
+w(\fF)=\frac{\lambda}{4}(\III-\ln\III)+\frac{\mu}{2}(\I-\ln\III).
+\end{align}
+It serves as starting point for our elastic strain gradient extension.
+The roman numbers $\I$ and $\III$ denote the first and third principle 
+invariants of the Cauchy-Green stretch tensors $\fB$ and $\fC$, 
+$\lambda$ and $\mu$ are Lam\'e's constants. 
+\section{Strain gradient extension}
+To comply with the principle of invariance under rigid body motion, $w$ 
+is best formulated in terms of material deformation measures. While we use 
+$\fC=\fF^T\fF$ for the first gradient, we need to define a similar 
+material stretch measure for the second gradient 
+$\fF_3=\fx\otimes\nabla_0\otimes\nabla_0$. A canonical extension is
+\begin{align}
+\fC_3=\fF^T\fF_3.
+\end{align}
+A simple invariant is the norm, which we term $g$ to 
+indicate the strain gradient contribution,
+\begin{align}
+g=\sqrt{\fC_3\cdot\cdot\cdot\fC_3}.
+\end{align}
+We extend $w$ by a summand that contains $g$. We choose
+\begin{align}
+w_g(\fF)=\frac{\lambda}{4}(\III-\ln\III)+\frac{\mu}{2}(\I-\ln\III)+\frac{\alpha}{2}g^2,
+\end{align}
+where $\alpha$ is a new material parameter. 
+\section{Stress-Strain relation}
+We consider the first Piola-Kirchhoff stresses $\fT$ as most practical for 
+our purpose. Especially from an implementation point of view, we can 
+write down the local balance of momentum by using the material nabla 
+operator $\nabla_0$,
+\begin{align}
+\rho(\fa-\fb)=\fT\cdot\nabla_0-\fT_3\cdot\cdot(\nabla_0\otimes\nabla_0).
+\end{align}
+Thus we need in the FE implementation the same operators 
+$\nabla_0$ and $\nabla_0\otimes\nabla_0$
+for calculating the first and second gradient and for 
+calculating the residuals, which 
+simplifies the implementation considerably. 
+We refer to $\fT_3$ thus as the first Piola-Kirchhoff stress tensor of 
+third order, which is derived from $w$ similar to the usual first 
+Piola-Kirchhoff stresses,
+\begin{align}
+\fT  &=\frac{\partial w}{\partial \fF},\\
+\fT_3&=\frac{\partial w}{\partial \fF_3}.
+\end{align}
+We summarize $\rho_0$ with the material constants, since it is also a 
+constant. The derivatives evaluate to
+\begin{align}
+\fT  &=\mu \fF + \left(\frac{\lambda}{2}\left(\III-1\right)-\mu\right) 
+\fF^{-T}+\alpha F_{mjl} C_{njl}\fe_m\otimes\fe_n,\\
+\fT_3 &=\alpha \fF\fC_3=\alpha\fB\fF_3.
+\end{align}
+The number of indices distinguishes $\fF,\fF_3$ and $\fC,\fC_3$ in the 
+index notation. Additional   to the stress-strain (gradient) relation, 
+we need the linearisations,
+\begin{align}
+\frac{\partial\fT}{\partial\fF}   &=\mu \ffI - \left(\frac{\lambda}{2} 
+(\III-1)-\mu\right)(F^{-1}_{jk}F^{-T}_{il})_{ijkl}+\lambda\III\fF^{-T}\otimes\fF^{-T}+\alpha(F_{ixy}F_{kxy}\delta_{jl})_{ijkl},\\
+\frac{\partial\fT}{\partial\fF_3} &=\alpha(\delta_{ik}C_{jlm}+F_{kj}F_{ilm})_{ijklm},\\
+\frac{\partial\fT_3}{\partial\fF} &=\alpha(\delta_{il}C_{mjk}+F_{im}F_{ljk})_{ijklm},\\
+\frac{\partial\fT_3}{\partial\fF_3}&=\alpha\fB\ffI^6=\alpha(B_{il}\delta_{jm}\delta_{kn})_{ijklmn}
+\end{align}
+
+
+\end{document}
