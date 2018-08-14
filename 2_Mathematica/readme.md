@@ -1,4 +1,4 @@
-## Mathematica code that generates fortran code
+## Mathematica code that generates Fortran code
 
 - The two mathematica notebooks here generate some bulk Fortran code that is needed for the user element implementation. The files are commented and sufficiently self-explanatory.
   * `element_formulation.n` exports the element matrices to determine the polynomial coefficients from the DOF and to to evaluate the shape functions, see the file `code56.txt`
