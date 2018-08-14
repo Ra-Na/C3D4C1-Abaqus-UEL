@@ -1,4 +1,4 @@
-## Visualisation with paraview 
+## Visualisation with Paraview 
 
 - This folder contains a [python program](make_vtk.py) that generates a Paraview-readable VTK file.
 - It needs three input files specified at the beginning of the Python program: 
