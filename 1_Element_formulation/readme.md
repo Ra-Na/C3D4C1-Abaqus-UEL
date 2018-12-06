@@ -22,6 +22,9 @@
 
 - It is important that only adjacent nodes are involved when interpolating the pDOF (red arrows). This ensures common pDOF-values at adjacent elements
 - we have then 10 DOF + 14*4 pDOF = binomial(5+3 over 5), which means we can adopt a complete  5<sup>th</sup>-order polynomial
+- Note that the higher order element is more sensitive to extreme aspect ratios
 - Numerical integration is done with rules from Jinyun, Y. (1984). “Symmetric gaussian quadrature formulae for tetrahedronal regions”. In: Computer Methods in Applied Mechanics and Engineering 43, pp. 349–353. and Cools, R. (2003). “An encyclopaedia of cubature formulas”. In: Journal of Complexity 19.3. Oberwolfach Special Issue, pp. 445–453. We use 29 integration points with positive weights, the integration is exact up to 6<sup>th</sup> order polynomials
+
+
 
 Continue here: [Mathematica: Shape function derivation and code generation](../2_Mathematica)
