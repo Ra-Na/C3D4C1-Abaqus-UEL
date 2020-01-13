@@ -9,8 +9,7 @@ This repository contains all the necessary tools to use a tetrahedral incompatib
 5. Full 5<sup>th</sup> order polynomial shape function
 6. Numerical integration exact up to a full 6<sup>th</sup> order polynomial
 
-It supplements the article 
-[1] **_A C1 incompatible mode element formulation for strain gradient elasticity_** [DOI: 10.1007/978-3-030-30406-5_6](https://doi.org/10.1007/978-3-030-30406-5_6)
+It supplements the article **_A C1 incompatible mode element formulation for strain gradient elasticity_** [DOI: 10.1007/978-3-030-30406-5_6](https://doi.org/10.1007/978-3-030-30406-5_6)
 
 ## Walkthrough
 
@@ -23,7 +22,7 @@ It supplements the article
 
 ## Referencing
 
-When refering to the script in publications please cite as follows:
+Please cite as follows:
 
 ```
 @article{GLUEGE20192,
