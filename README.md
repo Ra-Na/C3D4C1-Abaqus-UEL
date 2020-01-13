@@ -9,6 +9,9 @@ This repository contains all the necessary tools to use a tetrahedral incompatib
 5. Full 5<sup>th</sup> order polynomial shape function
 6. Numerical integration exact up to a full 6<sup>th</sup> order polynomial
 
+It supplements the article 
+[1] **_A C1 incompatible mode element formulation for strain gradient elasticity_** [DOI: 10.1007/978-3-030-30406-5_6](https://doi.org/10.1007/978-3-030-30406-5_6)
+
 ## Walkthrough
 
 1. [Element formulation](./1_Element_formulation)
@@ -16,3 +19,24 @@ This repository contains all the necessary tools to use a tetrahedral incompatib
 3. [Fortran UEL](./3_Fortran_UEL)
 4. [Abaqus example](./4_ABQ_Example)
 5. [Visualisation with Paraview](./5_Visualisation)
+
+
+## Referencing
+
+When refering to the script in publications please cite as follows:
+
+```
+@article{GLUEGE20192,
+  author = {Gl{\"u}ge, R.},
+  editor = {Altenbach, H. and M{\"u}ller, W.H. and Abali, B.E.},
+  title = {A C1 Incompatible Mode Element Formulation for Strain Gradient Elasticity},
+  booktitle = {Higher Gradient Materials and Related Generalized Continua},
+  year = {2019},
+  publisher = {Springer International Publishing},
+  address = {Cham},
+  pages = {95--120},
+  isbn = {978-3-030-30406-5},
+  doi = {10.1007/978-3-030-30406-5_6},
+  url = {https://doi.org/10.1007/978-3-030-30406-5_6}
+}
+```
