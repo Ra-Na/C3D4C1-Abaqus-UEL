@@ -73,6 +73,7 @@
       if(echo.eq.1)then
 !       filename 1: integration point values
 !       filename 3: unique nodal values
+!       The Tilde may cause trouble, replace with your home folder
         dirname="~/data/ecke/sehrfein/a0/"
         filename1="IPVALS20_"
         filename3="UNVALS20_"
