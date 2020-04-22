@@ -73,6 +73,7 @@
       if(echo.eq.1)then
 !       filename 1: integration point values
 !       filename 3: unique nodal values
+!       The Tilde may cause trouble, replace with your home folder
         dirname="~/"
         filename1="IPVALS56_"
         filename3="UNVALS56_"
